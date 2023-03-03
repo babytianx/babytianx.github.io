@@ -1,641 +1,779 @@
 ﻿<!DOCTYPE html>
-<html lang="zxx">
-    <head>
-        <!-- Meta Tags -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-        <meta name="description" content="Multipages HTML5 Template">
-        <meta name="author" content="">
+<html lang="en">
 
-        <!-- Page Title -->
-        <title>Multipages HTML5 Template</title>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <!-- Favicon and touch Icons -->
-        <link href="images/favicon.png" rel="shortcut icon" type="image/png">
-        <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
-        <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
-        <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
-        <link href="images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/images/favicon.png">
 
-        <!-- Lead Style -->
-        <link href="css/style.css" rel="stylesheet" type="text/css">
-    </head>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,500i,600&display=swap" rel="stylesheet">
 
-    <body>
-		<div id="preloader" class="loader_show">
-			<div class="loader-wrap">
-			<div class="loader">
-				<div class="loader-inner"></div>
-			</div>
-			</div>
-		</div>
-		
-		<!-- pointer start -->
-		<div class="pointer bnz-pointer" id="bnz-pointer"></div>
-		
-		<div class="content">
-    		<div class="top_part">
-	        	<!-- Start Header -->
-				<header id="header" class="header_1 header">
-					<div class="navigation">
-						<nav id="flexmenu">
-							<div class="logo">
-								<a href="index.html"><img src="images/logo.png" alt="logo"></a>
-							</div>
-							<div class="nav-inner">
-								<div id="mobile-toggle" class="mobile-btn"></div>
-								<ul class="main-menu">
-									<li class="menu-item active"><a href="index.html">Home</a>
-										<ul class="sub-menu">
-											<li class="menu-item"><a href="index-2.html">Home 2</a></li>
-											<li class="menu-item"><a href="index-3.html">Home 3</a></li>
-										</ul>
-									</li>
-									<li class="menu-item"><a href="#">Posts</a>
-										<ul class="sub-menu">
-											<li class="menu-item"><a href="blog-details.html">Blog Details</a></li>
-											<li class="menu-item"><a href="blog-details-fullwidth.html">Blog Details Fullwidth</a></li>
-										</ul>
-									</li>
-									<li class="menu-item"><a href="about.html">About Author</a></li>
-									<li class="menu-item"><a href="contact.html">Contact Us</a></li>
-								</ul>
-							</div>
-						</nav>
-					</div>
-		        </header>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-				<div class="top-social-1 social_links">
-					<ul class="top-social">
-						<li><a href="#"><i class="ion-social-facebook"></i></a></li>
-						<li><a href="#"><i class="ion-social-instagram"></i></a></li>
-						<li><a href="#"><i class="ion-social-twitter"></i></a></li>
-					</ul>
-				</div>
+  <!-- Fontawesome CSS-->
+  <link rel="stylesheet" href="assets/css/all.css" />
 
-				<div class="theme_slider_1">
-		            <div class="slider_inner_content">
-						<div class="slider_text">
-							<div class="swiper-container slider_posts">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<article class="blog_post">
-											<div class="post_img">
-												<div class="calendar">
-													<a href="#"><span class="date">30</span><br>May</a>
-												</div>
-											</div>
-											<div class="post_content">
-												<div class="post_header">
-													<h2 class="post_title" data-swiper="overlay-left">
-														<a href="#">Live with no excuses & travel with no regrets</a>
-													</h2>
-												</div>
-												<div class="post_intro">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-														et dolore magina aliqua. Quis ipsum suspendise ultrces gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis... </p>
-												</div>
-												<div class="post_footer">
-													<div class="read_more">
-														<a href="blog-details.html">Continue Reading</a>
-													</div>
-												</div>
-											</div>
-										</article>
-									</div>
+  <!-- slick css -->
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
 
-									<div class="swiper-slide">
-										<article class="blog_post">
-											<div class="post_img">
-												<div class="calendar">
-													<a href="#"><span class="date">27</span><br>May</a>
-												</div>
-											</div>
-											<div class="post_content">
-												<div class="post_header">
-													<h2 class="post_title" data-swiper="overlay-left">
-														<a href="#">50 travel essentials you must have to collect</a>
-													</h2>
-												</div>
-												<div class="post_intro">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-														et dolore magina aliqua. Quis ipsum suspendise ultrces gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis... </p>
-												</div>
-												<div class="post_footer">
-													<div class="read_more">
-														<a href="blog-details.html">Continue Reading</a>
-													</div>
-												</div>
-											</div>
-										</article>
-									</div>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/preloader.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
 
-									<div class="swiper-slide">
-										<article class="blog_post">
-											<div class="post_img">
-												<div class="calendar">
-													<a href="#"><span class="date">24</span><br>May</a>
-												</div>
-											</div>
-											<div class="post_content">
-												<div class="post_header">
-													<h2 class="post_title" data-swiper="overlay-left">
-														<a href="#">With age, comes wisdom, comes understanding</a>
-													</h2>
-												</div>
-												<div class="post_intro">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-														et dolore magina aliqua. Quis ipsum suspendise ultrces gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis... </p>
-												</div>
-												<div class="post_footer">
-													<div class="read_more">
-														<a href="blog-details.html">Continue Reading</a>
-													</div>
-												</div>
-											</div>
-										</article>
-									</div>
-								</div>
-								<!-- Add Pagination -->
-								<div class="swiper-pagination"></div>
-							</div>
-						</div>
-					
-						<div class="slider_images">
-							<div class="swiper-container slider_posts">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="slide_img" data-swiper="overlay-left">
-											<img src="images/slider/1.jpg" alt="img">
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="slide_img" data-swiper="overlay-left">
-											<img src="images/slider/2.jpg" alt="img">
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="slide_img" data-swiper="overlay-left">
-											<img src="images/slider/3.jpg" alt="img">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="featured_category bg_image_1" data-aos="fade-up" data-aos-duration="700">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-3 col-sm-6">
-							<div class="featured_category_item" data-aos="fade-up" data-aos-duration="600">
-								<img src="images/category/1.jpg" alt="img">
-								<div class="featured_category_info">
-									<h6 class="featured_category_heading"><a href="#">Travel & Advanture</a></h6>
-									<p class="featured_category_number"><span>06</span> Posts</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-sm-6">
-							<div class="featured_category_item" data-aos="fade-up" data-aos-duration="800">
-								<img src="images/category/2.jpg" alt="img">
-								<div class="featured_category_info">
-									<h6 class="featured_category_heading"><a href="#">Road Trip</a></h6>
-									<p class="featured_category_number"><span>12</span> Posts</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-sm-6">
-							<div class="featured_category_item" data-aos="fade-up" data-aos-duration="1000">
-								<img src="images/category/3.jpg" alt="img">
-								<div class="featured_category_info">
-									<h6 class="featured_category_heading"><a href="#">Camping Trip</a></h6>
-									<p class="featured_category_number"><span>09</span> Posts</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-sm-6">
-							<div class="featured_category_item" data-aos="fade-up" data-aos-duration="1200">
-								<img src="images/category/4.jpg" alt="img">
-								<div class="featured_category_info">
-									<h6 class="featured_category_heading"><a href="#">Travel Photography</a></h6>
-									<p class="featured_category_number"><span>16</span> Posts</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+  <title>babytianx</title>
+</head>
 
-			<div class="main-wrapper">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-md-7">
-							<div class="blog_list" data-aos="fade-up" data-aos-duration="700">
-								<article class="blog_post">
-									<div class="post_img" data-aos="overlay-left">
-										<a href="#"><img src="images/blog/1.jpg" alt="blog"></a>
-										<div class="calendar">
-											<a href="#"><span class="date">30</span><br>May</a>
-										</div>
-									</div>
-									<div class="post_content">
-										<div class="post_header">
-											<div class="author"><a href="#"><i class="ion-android-create"></i> By Partricia Doe</a></div>
-											<h2 class="post_title">
-												<a href="#">Live with no excuses & travel with no regrets</a>
-											</h2>
-										</div>
-										<div class="post_intro">
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-												et dolore magina aliqua. Quis ipsum suspendise ultrces gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis... </p>
-										</div>
-										<div class="post_footer">
-											<div class="read_more" data-aos="fade-up" data-aos-duration="700">
-												<a href="blog-details.html">Continue Reading</a>
-											</div>
-											<div class="post_share">
-												<ul class="share_list">
-													<li data-aos="fade-up" data-aos-duration="500"><a href="#"><i class="ion-social-facebook"></i></a></li>
-													<li data-aos="fade-up" data-aos-duration="700"><a href="#"><i class="ion-social-twitter"></i></a></li>
-													<li data-aos="fade-up" data-aos-duration="900"><a href="#"><i class="ion-social-rss"></i></a></li>
-													<li data-aos="fade-up" data-aos-duration="1100"><a href="#"><i class="ion-social-instagram"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</article>
-								
-								<article class="blog_post">
-									<div class="post_img" data-aos="overlay-right">
-										<a href="#"><img src="images/blog/2.jpg" alt="blog"></a>
-										<div class="calendar">
-											<a href="#"><span class="date">27</span><br>May</a>
-										</div>
-									</div>
-									<div class="post_content">
-										<div class="post_header">
-											<div class="author"><a href="#"><i class="ion-android-create"></i> By Partricia Doe</a></div>
-											<h2 class="post_title">
-												<a href="#">50 travel essentials you must have</a>
-											</h2>
-										</div>
-										<div class="post_intro">
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-												et dolore magina aliqua. Quis ipsum suspendise ultrces gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis... </p>
-										</div>
-										<div class="post_footer">
-											<div class="read_more" data-aos="fade-up" data-aos-duration="700">
-												<a href="blog-details.html">Continue Reading</a>
-											</div>
-											<div class="post_share">
-												<ul class="share_list">
-													<li data-aos="fade-up" data-aos-duration="500"><a href="#"><i class="ion-social-facebook"></i></a></li>
-													<li data-aos="fade-up" data-aos-duration="700"><a href="#"><i class="ion-social-twitter"></i></a></li>
-													<li data-aos="fade-up" data-aos-duration="900"><a href="#"><i class="ion-social-rss"></i></a></li>
-													<li data-aos="fade-up" data-aos-duration="1100"><a href="#"><i class="ion-social-instagram"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</article>
-							</div>
+<body>
+  <!-- Preloader -->
+  <div class="preloader-wrapper">
+    <div class="preloader">
+      <div class="preloader-circle" id="status">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <!-- Preloader end -->
+  <!-- Header -->
+  <div class="headerpage"></div>
+  <!-- Header end-->
+  <!-- Banner section -->
+  <section class="banner-section">
+    <div class="main-banner">
+      <div class="container">
+        <div class="banner-bg">
+          <div class="banner-bg-left">
+          </div>
+          <div class="banner-bg-right">
+            <div class="banner-carousel">
+              <div class="banner-item">
+                <div class="banner-img">
+                  <a href="single-no-sidebar.html"> <img src="assets/images/banner-1.jpg" alt=""></a>
+                </div>
+                <div class="banner-text">
+                  <ul class="category-tag-list">
+                    <li class="category-tag-name">
+                      <a href="#">Lifestyle</a>
+                    </li>
+                    <li class="category-tag-name">
+                      <a href="#">Travel</a>
+                    </li>
+                  </ul>
+                  <div class="title-font">
+                    <a href="single-no-sidebar.html">No more mistakes about travel season</a>
+                  </div>
+                  <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quo sequi
+                    quibusdam
+                    similique exercitationem ratione consequuntur ipsa quas? Fugiat illum cupiditate voluptates,
+                    nulla
+                    quis
+                    doloremque officia ex placeat in ratione!</p>
+                  <a href="single-no-sidebar.html" class="btn btn-solid btn-read">Read More</a>
+                </div>
+              </div>
+              <div class="banner-item">
 
-							<div class="newsletter bg_image_2" data-aos="fade-up" data-aos-duration="700">
-								<div class="row">
-									<div class="col-lg-10 offset-lg-1">
-										<form class="newsletter_form" method="post" action="subscription.php">
-											<div class="newsletter_header">
-												<p><i class="ion-email"></i>Subscribe to newsletter</p>
-												<h3>Get each & every new blogs through your e-mail</h3>
-											</div>
-											<div class="form_group">
-												<input class="form-control" type="email" placeholder="Your Email Address" name="ne" required="">
-												<input type="submit" class="button" value="Subscribe">
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-							
-							<div class="more_posts">
-								<div class="row">
-									<div class="col-lg-6 col-md-6">
-										<article class="blog_post" data-aos="fade-up" data-aos-duration="700">
-											<div class="post_img" data-aos="overlay-left">
-												<a href="#"><img src="images/blog/sm1.jpg" alt="blog"></a>
-												<div class="calendar">
-													<a href="#"><span class="date">27</span><br>May</a>
-												</div>
-											</div>
-											<div class="post_content">
-												<div class="post_header">
-													<div class="author"><a href="#"><i class="ion-android-create"></i> By Partricia Doe</a></div>
-													<h2 class="post_title">
-														<a href="#">With age, comes wisdom. With travel, comes understanding</a>
-													</h2>
-												</div>
-											</div>
-										</article>
-									</div>
+                <div class="banner-img">
+                  <a href="single-no-sidebar.html">
+                    <img src="assets/images/london.jpg" alt="">
+                  </a>
+                </div>
 
-									<div class="col-lg-6 col-md-6">
-										<article class="blog_post" data-aos="fade-up" data-aos-duration="900">
-											<div class="post_img" data-aos="overlay-left">
-												<a href="#"><img src="images/blog/sm2.jpg" alt="blog"></a>
-												<div class="calendar">
-													<a href="#"><span class="date">27</span><br>May</a>
-												</div>
-											</div>
-											<div class="post_content">
-												<div class="post_header">
-													<div class="author"><a href="#"><i class="ion-android-create"></i> By Partricia Doe</a></div>
-													<h2 class="post_title">
-														<a href="#">I am not the same having seen the moon shineon the sky</a>
-													</h2>
-												</div>
-											</div>
-										</article>
-									</div>
+                <div class="banner-text">
+                  <ul class="category-tag-list">
 
-									<div class="col-lg-6 col-md-6">
-										<article class="blog_post" data-aos="fade-up" data-aos-duration="900">
-											<div class="post_img" data-aos="overlay-right">
-												<a href="#"><img src="images/blog/sm3.jpg" alt="blog"></a>
-												<div class="calendar">
-													<a href="#"><span class="date">24</span><br>May</a>
-												</div>
-											</div>
-											<div class="post_content">
-												<div class="post_header">
-													<div class="author"><a href="#"><i class="ion-android-create"></i> By Partricia Doe</a></div>
-													<h2 class="post_title">
-														<a href="#">Travel and change of place impart new vigor to the mind</a>
-													</h2>
-												</div>
-											</div>
-										</article>
-									</div>
+                    <li class="category-tag-name">
+                      <a href="#">Travel</a>
+                    </li>
+                  </ul>
+                  <div class="title-font">
+                    <a href="single-no-sidebar.html">Get ready for December Adventures</a>
+                  </div>
+                  <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quo sequi
+                    quibusdam
+                    similique exercitationem ratione consequuntur ipsa quas? Fugiat illum cupiditate voluptates,
+                    nulla
+                    quis
+                    doloremque officia ex placeat in ratione!</p>
 
-									<div class="col-lg-6 col-md-6">
-										<article class="blog_post" data-aos="fade-up" data-aos-duration="900">
-											<div class="post_img" data-aos="overlay-right">
-												<a href="#"><img src="images/blog/sm4.jpg" alt="blog"></a>
-												<div class="calendar">
-													<a href="#"><span class="date">22</span><br>May</a>
-												</div>
-											</div>
-											<div class="post_content">
-												<div class="post_header">
-													<div class="author"><a href="#"><i class="ion-android-create"></i> By Partricia Doe</a></div>
-													<h2 class="post_title">
-														<a href="#">A journey is best measured in friends, rather than miles</a>
-													</h2>
-												</div>
-											</div>
-										</article>
-									</div>
+                  <a href="single-no-sidebar.html" class="btn btn-solid btn-read">Read More</a>
 
-									<div class="col-lg-6 col-md-6">
-										<article class="blog_post" data-aos="fade-up" data-aos-duration="700">
-											<div class="post_img" data-aos="overlay-left">
-												<a href="#"><img src="images/blog/sm5.jpg" alt="blog"></a>
-												<div class="calendar">
-													<a href="#"><span class="date">20</span><br>May</a>
-												</div>
-											</div>
-											<div class="post_content">
-												<div class="post_header">
-													<div class="author"><a href="#"><i class="ion-android-create"></i> By Partricia Doe</a></div>
-													<h2 class="post_title">
-														<a href="#">He who would travel happily must travel light</a>
-													</h2>
-												</div>
-											</div>
-										</article>
-									</div>
 
-									<div class="col-lg-6 col-md-6">
-										<article class="blog_post" data-aos="fade-up" data-aos-duration="900">
-											<div class="post_img" data-aos="overlay-left">
-												<a href="#"><img src="images/blog/sm6.jpg" alt="blog"></a>
-												<div class="calendar">
-													<a href="#"><span class="date">07</span><br>May</a>
-												</div>
-											</div>
-											<div class="post_content">
-												<div class="post_header">
-													<div class="author"><a href="#"><i class="ion-android-create"></i> By Partricia Doe</a></div>
-													<h2 class="post_title">
-														<a href="#">You will see what a tiny place occupy in the world</a>
-													</h2>
-												</div>
-											</div>
-										</article>
-									</div>
-								</div>
-							</div>
+                </div>
+              </div>
+              <div class="banner-item">
 
-							<div class="pagination-div">
-								<ul class="pagination">
-									<li><a class="page-number current" href="#">1</a></li>
-									<li><a class="page-number" href="#">2</a></li>
-									<li><a class="page-number" href="#">3</a></li>
-									<li><a href="#">Older Post</a></li>
-								</ul>
-							</div>
-						</div>
-						
-						<div class="col-lg-4 col-md-5">
-							<div class="sidebar" data-aos="fade-up" data-aos-duration="900">
-								<div id="custom_1" class="widget widget_custom">
-									<h4 class="widget_title">About Author</h4>
-                                    <div class="sidebar_author">
-										<img src="images/author.png" alt="img">									
-										<p class="intro">Lorem ipsum dolor sit amet consec adipiscing elit, sed do eiusmod tempor inci didunt ut labore et dolore magina aliqua. Quis ipsum suspendise</p>
+                <div class="banner-img">
+                  <a href="single-no-sidebar.html">
+                    <img src="assets/images/houses.jpg" alt="">
 
-										<div class="social_profile">
-											<div class="social_media">
-												<a href="#">
-													<i class="ion-social-facebook"></i>
-													<div class="name">Facebook</div>
-													<div class="off_text">45k Likes</div>
-												</a>
-											</div>
+                  </a>
+                </div>
 
-											<div class="social_media">
-												<a href="#">
-													<i class="ion-social-twitter"></i>
-													<div class="name">Twitter</div>
-													<div class="off_text">21k Follower</div>
-												</a>
-											</div>
+                <div class="banner-text">
+                  <ul class="category-tag-list">
 
-											<div class="social_media">
-												<a href="#">
-													<i class="ion-social-instagram"></i>
-													<div class="name">Instagram</div>
-													<div class="off_text">23k Follower</div>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div id="recent-posts-1" class="widget widget_recent_posts">
-									<h4 class="widget_title">Recent Posts</h4>
-									<div class="sidebar_recent_posts">
-										<ul>
-											<li><a href="#">Let’s escape in the  cityscape</a></li>
-											<li><a href="#">Failure doesn’t define  anything</a></li>
-											<li><a href="#">Bohemian mountain towards Us</a></li>
-										</ul>
-									</div>
-								</div>
+                    <li class="category-tag-name">
+                      <a href="#">Travel</a>
+                    </li>
+                  </ul>
+                  <div class="title-font">
+                    <a href="#">Something amazing about these tall buildings</a>
+                  </div>
+                  <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt vel numquam eveniet
+                    nisi iure aliquid. Ea mollitia optio nostrum ut.</p>
 
-								<div id="custom_2" class="widget widget_custom">
-									<div class="sidebar_add">
-										<img src="images/add.png" alt="add">
-									</div>
-								</div>
+                  <a href="single-no-sidebar.html" class="btn btn-solid btn-read">Read More</a>
 
-								<div id="categories-1" class="widget widget_categories">
-                                    <h4 class="widget_title">Categories</h4>
-                                    <div class="sidebar_categories">
-                                        <ul class="category_list">
-                                            <li><a href="#">Travel Hacks</a> (5)</li>
-                                            <li><a href="#">South Asia</a> (7)</li>
-                                            <li><a href="#">Travel Photography</a> (4)</li>
-                                            <li><a href="#">Wildlife Adventure</a> (2)</li>
-                                            <li><a href="#">Road Trips</a> (4)</li>
-                                        </ul>
-                                    </div>
-								</div>
-								
-								<div id="popular-1" class="widget widget_popular_posts">
-                                    <h4 class="widget_title">Most Read Blogs</h4>
-                                    <div class="sidebar_popular_posts">
-                                        <div class="popular_post_item">
-                                            <div class="popular_post_item_wrapper">
-												<img src="images/popular/1.jpg" alt="img">
-												<div class="popular_post_item_content">
-                                                    <h4 class="popular_post_item_title"><a href="#">Beautiful afternoon boating in Morine Lake</a></h4>
-                                                </div>
-                                            </div>
-										</div>
-										<div class="popular_post_item">
-                                            <div class="popular_post_item_wrapper">
-												<img src="images/popular/2.jpg" alt="img">
-												<div class="popular_post_item_content">
-                                                    <h4 class="popular_post_item_title"><a href="#">Sudden trip to grand Canyons</a></h4>
-                                                </div>
-                                            </div>
-										</div>
-										<div class="popular_post_item">
-                                            <div class="popular_post_item_wrapper">
-												<img src="images/popular/3.jpg" alt="img">
-												<div class="popular_post_item_content">
-                                                    <h4 class="popular_post_item_title"><a href="#">First Snow Experience of my life</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                </div>
+              </div>
 
-								<div id="tags-1" class="widget widget_tag_cloud">
-                                    <h4 class="widget_title">Tag Cloud</h4>
-                                    <div class="tagcloud">
-                                        <a href="#">Travel</a>
-										<a href="#">PHOTOGRAPHY</a>
-										<a href="#">FASHION</a>
-										<a href="#">Travel</a>
-										<a href="#">HOBBY</a>
-										<a href="#">PHOTOGRAPHY</a>
-										<a href="#">NATURE</a>
-                                    </div>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		
-			<footer class="footer" data-aos="fade-up" data-aos-duration="700">
-				<div class="footer-above">
-					<div class="footer-logo">
-						<a href="#"><img src="images/logo-white.png" alt="logo"></a>
-					</div>
-					<div class="footer-social">
-						<ul>
-							<li><a href="#"><i class="ion-social-facebook"></i></a></li>
-							<li><a href="#"><i class="ion-social-instagram"></i></a></li>
-							<li><a href="#"><i class="ion-social-twitter"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer-middle">
-					<div class="container">
-						<div class="footer_widget_wrapper">
-							<div class="row">
-								<div class="col-lg-6 col-md-6">
-									<div class="footer_widget">
-										<div class="widget-title">
-											<h4>Instagram</h4>
-										</div>
-										<div class="instagram">
-											<ul>
-												<li><a href="#"><img src="images/insta/1.jpg" alt="insta"></a></li>
-												<li><a href="#"><img src="images/insta/2.jpg" alt="insta"></a></li>
-												<li><a href="#"><img src="images/insta/3.jpg" alt="insta"></a></li>
-												<li><a href="#"><img src="images/insta/4.jpg" alt="insta"></a></li>
-												<li><a href="#"><img src="images/insta/5.jpg" alt="insta"></a></li>
-												<li><a href="#"><img src="images/insta/6.jpg" alt="insta"></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-6">
-									<div class="footer_widget pd_lt">
-										<div class="blend-logo">
-											<a href="#"><img src="images/logo-big.png" alt="logo"></a>
-										</div>
-										<div class="footer_nav">
-											<ul>
-												<li class="menu-item"><a href="#">Home</a></li>
-												<li class="menu-item"><a href="#">About Author</a></li>
-												<li class="menu-item"><a href="#">Travel</a></li>
-												<li class="menu-item"><a href="#">Posts</a></li>
-												<li class="menu-item"><a href="#">Contact Us</a></li>
-												<li class="menu-item"><a href="#">Photography</a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="footer-bottom">
-					<div class="container">
-						<div class="copyright">
-							<p> &copy; 2020 - Benzo Blog. Created by WP ThemeBooster. All Rights <a href="http://www.bootstrapmb.com/">Reserved</a>.</p>
-						</div>
-					</div>
-				</div>
-			</footer>
-		</div>
 
-        <!-- All JavaScript Files
-        ================================================== -->
-		<script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="plugins/swiper/swiper.min.js"></script>
-		<script src="js/menu.js"></script>
-        <script src="plugins/aos/aos.js"></script>
-        <script src="js/custom.js"></script>
-	</body>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="more-content-grid py-30">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <a href="single-no-sidebar.html">
+                <img src="assets/images/bus.jpg" class="card-img-top " alt="" />
+              </a>
+              <div class="card-body px-0">
+                <ul class="category-tag-list">
+                  <li class="category-tag-name">
+                    <a href="#">Lifestyle</a>
+                  </li>
+                </ul>
+                <h5 class="card-title title-font">
+                  <a href="single-no-sidebar.html">
+                    Lies And Damn Lies About HIPPIE
+                  </a>
+                </h5>
+                <div class="author-date">
+                  <a class="author" href="#">
+                    <img src="assets/images/writer.jpg" alt="" class="rounded-circle" />
+                    <span class="writer-name-small">Julie</span>
+                  </a>
+                  <a class="date" href="#">
+                    <span>21 Dec, 2019</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <a href="single-no-sidebar.html">
+                <img src="assets/images/roaming.jpg" class="card-img-top " alt="" />
+              </a>
+
+              <div class="card-body px-0">
+                <ul class="category-tag-list">
+                  <li class="category-tag-name">
+                    <a href="#">Travel</a>
+                  </li>
+
+                </ul>
+
+                <h5 class="card-title title-font">
+                  <a href="single-no-sidebar.html">
+                    How roaming around is good for you</a>
+                </h5>
+                <div class="author-date">
+                  <a class="author" href="#">
+                    <img src="assets/images/writer.jpg" alt="" class="rounded-circle" />
+                    <span class="writer-name-small">Julie</span>
+                  </a>
+                  <a class="date" href="#">
+                    <span>21 Dec, 2019</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <a href="single-no-sidebar.html">
+                <img src="assets/images/paris.jpg" class="card-img-top " alt="" />
+              </a>
+
+              <div class="card-body px-0">
+                <ul class="category-tag-list">
+                  <li class="category-tag-name">
+                    <a href="#">Travel</a>
+                  </li>
+                </ul>
+
+                <h5 class="card-title title-font">
+                  <a href="single-no-sidebar.html">5 things you should not miss about Paris</a>
+                </h5>
+                <div class="author-date">
+                  <a class="author" href="#">
+                    <img src="assets/images/writer.jpg" alt="" class="rounded-circle" />
+                    <span class="writer-name-small">Julie</span>
+                  </a>
+                  <a class="date" href="#">
+                    <span>21 Dec, 2019</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Banner section end -->
+
+  <!-- Featured posts -->
+  <section class="featured-posts">
+    <div class="container">
+      <div class="section-title">
+        <h2>Featured posts</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-lg-7">
+          <div class="featured-left">
+            <div class="card">
+              <a href="single-no-sidebar.html"><img src="assets/images/girl.jpg" class="card-img " alt="" /></a>
+              <div class="card-img-overlay">
+                <ul class="category-tag-list">
+
+                  <li class="category-tag-name">
+                    <a href="#">Lifestyle</a>
+                  </li>
+                </ul>
+                <h5 class="card-title title-font">
+                  <a href="#">Lifestyle of woman in London</a>
+                </h5>
+                <p class="card-text mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                  nostrum eum, cum ab iusto error totam quae nemo dicta nesciunt
+                  quo earum ipsam, ex aspernatur.
+                </p>
+                <a href="single-no-sidebar.html" class="btn btn-solid btn-read">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-5">
+          <div class="featured-right">
+            <div class="card">
+              <a href="single-no-sidebar.html">
+                <img src="assets/images/umbrella.jpg" class="card-img-top " alt="">
+              </a>
+              <div class="card-body">
+                <ul class="category-tag-list">
+
+                  <li class="category-tag-name">
+                    <a href="#">Lifestyle</a>
+                  </li>
+                </ul>
+                <h5 class="card-title title-font"><a href="single-no-sidebar.html">Top 10 tips with common
+                    lifestyles</a>
+                </h5>
+                <div class="author-date">
+                  <a class="author" href="#">
+                    <img src="assets/images/writer.jpg" alt="" class="rounded-circle" />
+                    <span class="writer-name-small">Julie</span>
+                  </a>
+                  <a class="date" href="#">
+                    <span>21 Dec, 2019</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <a href="single-no-sidebar.html">
+                <img src="assets/images/streets.jpg" class="card-img-top " alt="">
+
+              </a>
+              <div class="card-body">
+                <ul class="category-tag-list">
+                  <li class="category-tag-name">
+                    <a href="#">Lifestyle</a>
+                  </li>
+                  <li class="category-tag-name">
+                    <a href="#">Travel</a>
+                  </li>
+                </ul>
+                <h5 class="card-title title-font"><a href="single-no-sidebar.html">Beautiful streets of village</a>
+                </h5>
+                <div class="author-date">
+                  <a class="author" href="#">
+                    <img src="assets/images/writer.jpg" alt="" class="rounded-circle" />
+                    <span class="writer-name-small">Julie</span>
+                  </a>
+                  <a class="date" href="#">
+                    <span>21 Dec, 2019</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Featured post end -->
+
+  <!-- Popular posts -->
+  <section class="popular-posts section-padding">
+    <div class="container">
+      <div class="section-title">
+        <h2>Popular posts</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-7 col-lg-8">
+          <div class="card mb-4">
+            <div class="row no-gutters align-items-center">
+              <div class="col-md-4">
+                <a href="single-no-sidebar.html">
+                  <img src="assets/images/time.jpg" class="card-img " alt="">
+                </a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <ul class="category-tag-list">
+                    <li class="category-tag-name">
+                      <a href="#">Lifestyle</a>
+                    </li>
+                  </ul>
+                  <h5 class="card-title title-font"><a href="single-no-sidebar.html">Making time for travel</a>
+                  </h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit. Sapiente, asperiores.<p>
+                      <div class="author-date">
+                        <a class="author" href="#">
+                          <img src="assets/images/writer.jpg" alt="" class="rounded-circle" />
+                          <span class="writer-name-small">Julie</span>
+                        </a>
+                        <a class="date" href="#">
+                          <span>21 Dec, 2019</span>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="row no-gutters align-items-center">
+              <div class="col-md-4">
+                <a href="single-no-sidebar.html"> <img src="assets/images/alone-house.jpg" class="card-img " alt=""></a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <ul class="category-tag-list">
+                    <li class="category-tag-name">
+                      <a href="#">Lifestyle</a>
+                    </li>
+
+                  </ul>
+                  <h5 class="card-title title-font"><a href="single-no-sidebar.html">Abandon houses</a></h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsum rem, delectus
+                    deserunt consectetur saepe? Expedita sapiente rerum nostrum fuga non iure minima sunt inventore.<p>
+                      <div class="author-date">
+                        <a class="author" href="#">
+                          <img src="assets/images/writer.jpg" alt="" class="rounded-circle" />
+                          <span class="writer-name-small">Julie</span>
+                        </a>
+                        <a class="date" href="#">
+                          <span>21 Dec, 2019</span>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-4">
+            <div class="row no-gutters align-items-center">
+              <div class="col-md-4">
+                <a href="single-no-sidebar.html"><img src="assets/images/taj.jpg" class="card-img " alt=""></a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <ul class="category-tag-list">
+                    <li class="category-tag-name">
+                      <a href="#">Travel</a>
+                    </li>
+                  </ul>
+                  <h5 class="card-title title-font"><a href="single-no-sidebar.html">7 wonders of the world</a></h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsum rem, delectus
+                    deserunt consectetur saepe? <p>
+                      <div class="author-date">
+                        <a class="author" href="#">
+                          <img src="assets/images/writer.jpg" alt="" class="rounded-circle" />
+                          <span class="writer-name-small">Julie</span>
+                        </a>
+                        <a class="date" href="#">
+                          <span>21 Dec, 2019</span>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-4">
+            <div class="row no-gutters align-items-center">
+              <div class="col-md-4">
+                <a href="single-no-sidebar.html"><img src="assets/images/camera.jpg" class="card-img " alt=""></a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <ul class="category-tag-list">
+                    <li class="category-tag-name">
+                      <a href="#">photography</a>
+                    </li>
+                  </ul>
+                  <h5 class="card-title title-font"><a href="single-no-sidebar.html"> Super easy ways to learn
+                      everything about
+                      photography</a></h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsum rem, delectus
+                    deserunt consectetur saepe? <p>
+                      <div class="author-date">
+                        <a class="author" href="#">
+                          <img src="assets/images/writer.jpg" alt="" class="rounded-circle" />
+                          <span class="writer-name-small">Julie</span>
+                        </a>
+                        <a class="date" href="#">
+                          <span>21 Dec, 2019</span>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="recent-posts">
+            <div class="sidebar-title">
+              <h5><i class="fas fa-circle"></i>Trending this week</h5>
+            </div>
+            <div class="sidebar-content">
+              <ul class="sidebar-list">
+                <li class="sidebar-item">
+                  <div class="num-left">
+                    1
+                  </div>
+                  <div class="content-right">
+                    <a href="single-no-sidebar.html">Healthy Dieting Habits for any age</a>
+
+                  </div>
+                </li>
+                <li class="sidebar-item">
+                  <div class="num-left">
+                    2
+                  </div>
+                  <div class="content-right">
+                    <a href="single-no-sidebar.html"> 10 foods you should try in Kathmandu</a>
+                  </div>
+                </li>
+                <li class="sidebar-item">
+                  <div class="num-left">
+                    3
+                  </div>
+                  <div class="content-right">
+                    <a href="single-no-sidebar.html">Everything You Wanted to Know About Love Life</a>
+                  </div>
+                </li>
+                <li class="sidebar-item">
+                  <div class="num-left">
+                    4
+                  </div>
+                  <div class="content-right">
+                    <a href="single-no-sidebar.html">Yoga works only under these conditions</a>
+                  </div>
+                </li>
+                <li class="sidebar-item">
+                  <div class="num-left">
+                    5
+                  </div>
+                  <div class="content-right">
+                    <a href="single-no-sidebar.html">Top 10 mysterious places you didn't know</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sidebar-posts mt-4">
+            <div class="sidebar-title">
+              <h5><i class="fas fa-circle"></i>Categories</h5>
+            </div>
+            <div class="sidebar-content">
+              <div class="category-name-list">
+                <div class="card small-card">
+                  <a href="single-no-sidebar.html"><img src="assets/images/shoes.jpg" class="card-img" alt="" /></a>
+                  <div class="card-img-overlay">
+                    <h5 class="card-title title-font mb-0">
+                      <a href="#">Travel</a>
+                    </h5>
+                  </div>
+                </div>
+                <div class="card small-card">
+                  <a href="single-no-sidebar.html"><img src="assets/images/photography.jpg" class="card-img"
+                      alt="" /></a>
+                  <div class="card-img-overlay">
+                    <h5 class="card-title title-font mb-0">
+                      <a href="#">Photography</a>
+                    </h5>
+                  </div>
+                </div>
+                <div class="card small-card">
+                  <a href="single-no-sidebar.html"><img src="assets/images/fashion.jpg" class="card-img" alt="" /></a>
+                  <div class="card-img-overlay">
+                    <h5 class="card-title title-font mb-0">
+                      <a href="#">Fashion</a>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Popular posts end -->
+
+  <!-- Recommended Posts -->
+  <section class="recommended-posts">
+    <div class="container">
+      <div class="section-title">
+        <h2>Recommended posts</h2>
+      </div>
+      <div class="more-content-grid ">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <a href="single-no-sidebar.html">
+                <img src="assets/images/lights.jpg" class="card-img-top" alt="" />
+              </a>
+              <div class="card-body px-0">
+                <ul class="category-tag-list">
+                  <li class="category-tag-name">
+                    <a href="#">Lifestyle</a>
+                  </li>
+                </ul>
+                <h5 class="card-title title-font">
+                  <a href="single-no-sidebar.html">
+                    5 brilliant ways to use lights</a>
+                </h5>
+                <div class="author-date">
+                  <a class="author" href="#">
+                    <img src="assets/images/writer.jpg" alt="" class="rounded-circle" />
+                    <span class="writer-name-small">Julie</span>
+                  </a>
+                  <a class="date" href="#">
+                    <span>21 Dec, 2019</span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <a href="single-no-sidebar.html">
+                <img src="assets/images/lighthouse.jpg" class="card-img-top" alt="" />
+              </a>
+              <div class="card-body px-0">
+                <ul class="category-tag-list">
+                  <li class="category-tag-name">
+                    <a href="#">Travel</a>
+                  </li>
+                </ul>
+                <h5 class="card-title title-font">
+                  <a href="single-no-sidebar.html">
+                    7 things you don't know about Light house</a>
+                </h5>
+                <div class="author-date">
+                  <a class="author" href="#">
+                    <img src="assets/images/writer.jpg" alt="" class="rounded-circle" />
+                    <span class="writer-name-small">Julie</span>
+                  </a>
+                  <a class="date" href="#">
+                    <span>21 Dec, 2019</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <a href="single-no-sidebar.html">
+                <img src="assets/images/woods.jpg" class="card-img-top" alt="" />
+              </a>
+              <div class="card-body px-0">
+                <ul class="category-tag-list">
+                  <li class="category-tag-name">
+                    <a href="#">Nature</a>
+                  </li>
+                </ul>
+                <h5 class="card-title title-font">
+                  <a href="single-no-sidebar.html">You will get lost in these woods</a>
+                </h5>
+                <div class="author-date">
+                  <a class="author" href="#">
+                    <img src="assets/images/writer.jpg" alt="" class="rounded-circle" />
+                    <span class="writer-name-small">Julie</span>
+                  </a>
+                  <a class="date" href="#">
+                    <span>21 Dec, 2019</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Recommended posts end -->
+
+  <!-- Instagram Posts -->
+  <section class="insta-posts">
+    <div class="container">
+      <div class="insta-title">
+        <img src="assets/images/instagram.svg" alt="">
+        <h2>Follow us on Instagram</h2>
+      </div>
+
+      <div class="image-item-grid insta-slider">
+
+        <div class="image-item">
+          <a href="#">
+            <img src="assets/images/beautiful-girl.jpg" alt="">
+          </a>
+          <a href="#">
+            <div class="image-hover">
+              <i class="fas fa-heart"></i>
+            </div>
+          </a>
+        </div>
+        <div class="image-item image-item-margin">
+          <a href="#">
+            <img src="assets/images/colors.jpg" alt="">
+          </a>
+          <a href="#">
+            <div class="image-hover">
+              <i class="fas fa-heart"></i>
+            </div>
+          </a>
+        </div>
+        <div class="image-item">
+          <a href="#">
+            <img src="assets/images/city-pink.jpg" alt="">
+          </a>
+          <a href="#">
+            <div class="image-hover">
+              <i class="fas fa-heart"></i>
+            </div>
+          </a>
+        </div>
+        <div class="image-item image-item-margin">
+          <a href="#">
+            <img src="assets/images/sea-lighthouse.jpg" alt="">
+          </a>
+          <a href="#">
+            <div class="image-hover">
+              <i class="fas fa-heart"></i>
+            </div>
+          </a>
+        </div>
+        <div class="image-item">
+          <a href="#">
+            <img src="assets/images/boat.jpg" alt="">
+          </a>
+          <a href="#">
+            <div class="image-hover">
+              <i class="fas fa-heart"></i>
+            </div>
+          </a>
+        </div>
+        <div class="image-item">
+          <a href="#">
+            <img src="assets/images/beach-sea.jpg" alt="">
+          </a>
+          <a href="#">
+            <div class="image-hover">
+              <i class="fas fa-heart"></i>
+            </div>
+          </a>
+        </div>
+        <div class="image-item">
+          <a href="#">
+            <img src="assets/images/orange-bus.jpg" alt="">
+          </a>
+          <a href="#">
+            <div class="image-hover">
+              <i class="fas fa-heart"></i>
+            </div>
+          </a>
+        </div>
+        <div class="image-item">
+          <a href="#">
+            <img src="assets/images/tall.jpg" alt="">
+          </a>
+          <a href="#">
+            <div class="image-hover">
+              <i class="fas fa-heart"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Instagram posts end -->
+  
+  <!-- Footer-->
+  <div class="footerpage"></div>
+  <!-- Footer  end-->
+  
+  <!-- Scroll to top -->
+  <div id="stop" class="scroll-to-top">
+    <span><a href="#"><i class="fas fa-arrow-up"></i></a></span>
+  </div>
+  <!-- Scroll to top end -->
+
+  <!-- Javascript -->
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/jquery.sticky.js"></script>
+  <script src="assets/js/ResizeSensor.min.js"></script>
+  <script src="assets/js/theia-sticky-sidebar.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+  $(function(){
+            /*公共部分
+            * 导航栏
+            * footer CopyRight
+            */
+            $(".headerpage").load('headerpage.html');
+            $(".footerpage").load("footerpage.html");
+        });
+	</script>
+</body>
+
 </html>
