@@ -44,8 +44,8 @@
 		<p style="font-size: 32px;font-weight: bold;text-align: center;width: 100%;color: #fff;margin: 20px auto;margin-bottom: 40px;">动效分享</p>
 		<!-- 动效 -->
 		<div style="display: flex;width: 100%;flex-wrap: wrap;justify-content: flex-start;">
-			<iframe  src="./animation/3D旋转相册炫酷js特效/index.html" style="height: 500px;width: 32%;margin-bottom: 10px;margin-right: 1%;"></iframe>
-			<iframe  src="./animation/很酷的粒子镂空球体threejs代码/index.html" style="height: 500px;width: 32%;margin-bottom: 10px;margin-right: 1%;"></iframe>
+			<iframe  src="./animation/3Drotate/index.html" style="height: 500px;width: 32%;margin-bottom: 10px;margin-right: 1%;"></iframe>
+			<iframe  src="./animation/threejs/index.html" style="height: 500px;width: 32%;margin-bottom: 10px;margin-right: 1%;"></iframe>
 			<iframe  src="./animation/CSS能量球动画代码/index.html" style="height: 500px;width: 32%;margin-bottom: 10px;margin-right: 1%;"></iframe>
 			<iframe  src="./animation/jQuery3D银河系动画网页代码old/index.html" style="height: 500px;width: 32%;margin-bottom: 10px;margin-right: 1%;"></iframe>
 			<iframe  src="./animation/svgcss3按轨迹行驶动画特效/index.html" style="height: 500px;width: 32%;margin-bottom: 10px;margin-right: 1%;"></iframe>
@@ -81,6 +81,7 @@
 			<div id="main4" style="height: 500px;width: 32%;margin-bottom: 10px;margin-right: 1%;background-image: radial-gradient(circle, #111, #000 800px);"></div>
 			<iframe  src="./animation/echarts地区分布闪烁地图热点特效/index.html" style="height: 500px;width: 32%;margin-bottom: 10px;margin-right: 1%;"></iframe>
 			<div id="main5" style="height: 500px;width: 32%;margin-bottom: 10px;margin-right: 1%;background-image: radial-gradient(circle, #111, #000 800px);"></div>
+			<div id="main6" class="chart" style="height: 500px;width: 32%;margin-bottom: 10px;margin-right: 1%;background-image: radial-gradient(circle, #111, #000 800px);"></div>
 		</div>
 		
 	</div>
@@ -100,6 +101,200 @@
 	initMain3();
 	initMain4();
 	initMain5();
+	initMain6();
+	function initMain6(){
+		// 基于准备好的dom，初始化echarts实例
+		var myChart = echarts.init(document.getElementById('main6'));
+		const xData = [
+		"0:00",
+		"2:00",
+		"4:00",
+		"6:00",
+		"8:00",
+		"12:00",
+		"16:00",
+		"20:00",
+		"24:00",
+		];
+		const yData = [111, 600, 255, 344, 333, 555, 111, 999, 0];
+		let datacoords = [
+		{
+			coords: [],
+		},
+		];
+		for (let i = 0; i < xData.length; i++) {
+		datacoords[0].coords.push([xData[i], yData[i]]);
+		}
+		//渲染图表
+		const renderChart = (myChart) => {
+			const options = {
+				animationDuration: 3000,
+				color: ["#ec5d5f", "#f2cb58", "#64a0c8"],
+				// tooltip: {
+				// 	trigger: "item",
+				// 	backgroundColor: "rgba(0,0,0,.5)",
+				// 	axisPointer: {
+				// 		type: "cross",
+				// 		label: {
+				// 		backgroundColor: "rgba(0,0,0,.5)",
+				// 		},
+				// 	},
+				// 	textStyle: {
+				// 		color: "#fff",
+				// 		fontSize: 10,
+				// 	},
+				// },
+				grid: {
+					left: "5%", //图表距边框的距离
+					right: "7%",
+					top: "11%",
+					bottom: "10%",
+					containLabel: true,
+				},
+				xAxis: [
+				{
+					nameGap: 3, //坐标轴名称与轴线之间的距离。
+					nameTextStyle: {
+						color: "rgba(255,255,255,.8)",
+						fontSize: 12,
+					},
+					type: "category",
+					data: xData,
+					boundaryGap: false, //从0开始
+						axisLine: {
+						//坐标轴线颜色
+						rotate: 30, //坐标轴内容过长旋转
+						interval: 0,
+						lineStyle: {
+							color: "#636E7C",
+						},
+					},
+					axisLabel: {
+						showMaxLabel: true,
+						fontSize: 12,
+						color: "rgba(255,255,255,.8)", //坐标的字体颜色
+					},
+					axisTick: {
+						//是否显示坐标轴刻度  x和y不交叉
+						show: false,
+					},
+				},
+				],
+				yAxis: [
+				{
+					name: "数量",
+					type: "value",
+					nameGap: 20,
+					min: 0,
+					max: function (value) {
+						return Math.ceil(value.max / 5) * 5;
+					},
+					splitNumber: 5,
+					nameTextStyle: {
+						//坐标轴字体
+						color: "rgba(255,255,255,.89)",
+						fontSize: 10,
+					},
+					splitLine: {
+						//网格线颜色
+						show: false,
+						lineStyle: {
+							color: "rgba(255,255,255,.25)",
+							type: "dashed",
+						},
+					},
+					axisTick: {
+						//是否显示坐标轴刻度
+						show: false,
+					},
+					axisLine: {
+						//坐标轴线颜色
+						show: true,
+						lineStyle: {
+							color: "#636E7C",
+						},
+					},
+					axisLabel: {
+						color: "rgba(255,255,255,.8)", //坐标的字体颜色
+						fontSize: 10,
+					},
+				},
+				],
+				series: [
+				{
+					name: "折线图",
+					type: "line",
+					smooth: 0, //可设置弧度，0-1
+					lineStyle: {
+						width: 1,
+						type: "solid",
+						shadowOffsetX: 0, // 折线的X偏移
+						shadowOffsetY: 3, // 折线的Y偏移
+						shadowBlur: 1, // 折线模糊
+						shadowColor: "rgba(220,120,40,0.95)", //阴影色
+						color: "#DC7828", //折线颜色
+					},
+					showSymbol: true,
+					symbol: "circle",
+					symbolSize: 8,
+					itemStyle: {
+						color: "#2f334d",
+						borderWidth: 1,
+						borderColor: "#DC7828",
+					},
+					areaStyle: {
+					// 颜色渐变函数 前四个参数分别表示四个位置依次为---右下左上
+					color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [
+						{
+						offset: 1,
+						color: "rgba(220,120,40,0.2)",
+						},
+						{
+						offset: 0.74,
+						color: "rgba(220,120,40,0.16)",
+						},
+						{
+						offset: 0.2,
+						color: "rgba(220,120,40,0)",
+						},
+					]),
+					},
+					emphasis: {
+						//focus: "series",
+					},
+					data: yData,
+				},
+				// 以下代码为流光效果-配置项代码
+				{
+					polyline: true,
+					showSymbol: false,
+					name: "流动光线",
+					type: "lines",
+					coordinateSystem: "cartesian2d",
+					effect: {
+						trailLength: 0.05,
+						show: true,
+						period: 22,
+						symbolSize: 5,
+						loop: true,
+					},
+					lineStyle: {
+						color: "#fff",
+						width: 0,
+						opacity: 0,
+						curveness: 0,
+						type: "dashed",
+					},
+					data: datacoords,
+				},
+				],
+			};
+			if (options && typeof options === "object") {
+				myChart.setOption(options);
+			}
+			};
+			renderChart(myChart);
+	};
 	function initMain5(){
 		// 基于准备好的dom，初始化echarts实例
 		var myChart = echarts.init(document.getElementById('main5'));
