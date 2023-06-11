@@ -1,0 +1,126 @@
+body {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  background-image: radial-gradient(circle, #111, #000 800px);
+}
+
+svg {
+  align-self: center;
+  width: 80vmin;
+  height: 80vmin;
+  -webkit-filter: drop-shadow(2px 1px 1px #666);
+  filter: drop-shadow(2px 1px 1px #666);
+}
+
+mask * {
+  fill: #fff;
+}
+mask :nth-child(even) {
+  fill: #000;
+}
+
+g:nth-of-type(odd) polygon {
+  animation-direction: reverse;
+}
+g:nth-of-type(1) {
+  fill: #f4c906;
+}
+g:nth-of-type(1) polygon {
+  animation-duration: 12s;
+}
+g:nth-of-type(2) {
+  fill: #ef5204;
+}
+g:nth-of-type(2) polygon {
+  animation-duration: 9s;
+}
+g:nth-of-type(3) {
+  fill: #cc2100;
+}
+g:nth-of-type(3) polygon {
+  animation-duration: 6s;
+}
+
+polygon {
+  animation: r 0s linear infinite;
+}
+
+.plane {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50vmax;
+  width: 100vmax;
+  height: 100vmax;
+  transform: translateY(13vmin) scaleY(0.5);
+}
+.plane:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  background: repeating-conic-gradient(rgba(254, 254, 254, 0.013) 0, rgba(254, 254, 254, 0.008) 7.5deg, rgba(254, 254, 254, 0.013) 15deg, rgba(254, 254, 254, 0) 0 30deg);
+  animation: r 15s linear infinite;
+  content: "";
+}
+
+@keyframes r {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.ripple {
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: solid 1em rgba(254, 254, 254, 0.15);
+  border-radius: 50%;
+}
+.ripple:nth-child(1) {
+  margin: -15vmin;
+  width: 30vmin;
+  height: 30vmin;
+  border-width: 3vmin;
+  opacity: 0.6666666667;
+  animation: f1 2s linear infinite;
+}
+@keyframes f1 {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+}
+.ripple:nth-child(2) {
+  margin: -30vmin;
+  width: 60vmin;
+  height: 60vmin;
+  border-width: 6vmin;
+  opacity: 0.3333333333;
+  animation: f2 2s linear infinite;
+}
+@keyframes f2 {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.6666666667;
+  }
+}
+.ripple:nth-child(3) {
+  margin: -45vmin;
+  width: 90vmin;
+  height: 90vmin;
+  border-width: 9vmin;
+  opacity: 0;
+  animation: f3 2s linear infinite;
+}
+@keyframes f3 {
+  0% {
+    transform: scale(0.6666666667);
+    opacity: 0.3333333333;
+  }
+}

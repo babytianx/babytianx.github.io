@@ -1,0 +1,104 @@
+body {
+  background-image: radial-gradient(circle, #111, #000 800px);
+  padding-top:130px;
+  text-align: center;
+}
+
+svg {
+  width: 50%;
+  animation: svg 2.3s infinite;
+}
+
+* {
+  transform-origin: 50% 50%;
+}
+
+#ring1 {
+  animation: ring1 10s linear infinite;
+}
+
+#ring2 {
+  animation: ring2 10s linear infinite;
+}
+
+#ring3 {
+  animation: ring3 7s linear infinite;
+}
+
+#Orb, #Orb_1_ {
+  animation: orb 2s linear infinite alternate;
+}
+
+@keyframes ring1 {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(90deg) scale(1.05);
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+  }
+  75% {
+    transform: rotate(270deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+@keyframes ring3 {
+  0% {
+    transform: rotate(360deg) scale(1);
+  }
+  25% {
+    transform: rotate(270deg) scale(1.05);
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+  }
+  75% {
+    transform: rotate(90deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+@keyframes ring2 {
+  0% {
+    transform: rotate(360deg) scale(1);
+  }
+  25% {
+    transform: rotate(270deg) scale(0.95);
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+  }
+  75% {
+    transform: rotate(90deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+@keyframes orb {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+@keyframes svg {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -2em;
+  }
+  100% {
+    margin-top: 0;
+  }
+}

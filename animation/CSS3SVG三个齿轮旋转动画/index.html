@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 SVG三个齿轮旋转动画 www.bootstrapmb.com</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+    <!-- connected to prev cog after i teeth clockwise-->
+    <div class="plane">
+        <div class="ripple"></div>
+        <div class="ripple"></div>
+        <div class="ripple"></div>
+    </div>
+    <svg viewbox="-1250 -1250 2500 2500">
+        <mask id="m0">
+            <rect x="-484" y="-484" width="968" height="968"></rect>
+            <circle r="247"></circle>
+            <circle r="124"></circle>
+            <rect x="98" y="-13" width="26" height="26"></rect>
+        </mask>
+        <g transform="translate(375 -375)">
+            <polygon points="380,-40 380,40 474,86 453,163 349,155 309,225 368,311 311,368 225,309 155,349 163,453 86,474 40,380 -40,380 -86,474 -163,453 -155,349 -225,309 -311,368 -368,311 -309,225 -349,155 -453,163 -474,86 -380,40 -380,-40 -474,-86 -453,-163 -349,-155 -309,-225 -368,-311 -311,-368 -225,-309 -155,-349 -163,-453 -86,-474 -40,-380 40,-380 86,-474 163,-453 155,-349 225,-309 311,-368 368,-311 309,-225 349,-155 453,-163 474,-86" mask="url(#m0)"></polygon>
+        </g>
+        <mask id="m1">
+            <rect x="-390" y="-390" width="780" height="780"></rect>
+            <circle r="185"></circle>
+            <circle r="93"></circle>
+            <rect x="67" y="-13" width="26" height="26"></rect>
+        </mask>
+        <g transform="translate(-172 172)rotate(-45)">
+            <polygon points="284,-40 284,40 374,94 347,169 243,152 192,213 226,312 157,352 89,272 10,286 -27,385 -106,371 -107,266 -176,226 -268,277 -320,216 -253,135 -280,59 -384,40 -384,-40 -280,-59 -253,-135 -320,-216 -268,-277 -176,-226 -107,-266 -106,-371 -27,-385 10,-286 89,-272 157,-352 226,-312 192,-213 243,-152 347,-169 374,-94" mask="url(#m1)"></polygon>
+        </g>
+        <mask id="m2">
+            <rect x="-297" y="-297" width="594" height="594"></rect>
+            <circle r="122"></circle>
+            <circle r="61"></circle>
+            <rect x="35" y="-13" width="26" height="26"></rect>
+        </mask>
+        <g transform="translate(-652 -164)rotate(-325)">
+            <polygon points="187,-40 187,40 268,109 228,178 128,142 59,182 40,287 -40,287 -59,182 -128,142 -228,178 -268,109 -187,40 -187,-40 -268,-109 -228,-178 -128,-142 -59,-182 -40,-287 40,-287 59,-182 128,-142 228,-178 268,-109" mask="url(#m2)"></polygon>
+        </g>
+    </svg>
+    <!-- partial -->
+
+</body>
+</html>

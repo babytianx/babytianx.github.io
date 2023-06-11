@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Lobster+Two:700i" rel="stylesheet">
+
+        <script src='https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js'></script>
+        <script src='../dist/echarts-liquidfill.js'></script>
+    </head>
+    <body>
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+				background-image: radial-gradient(circle, #111, #000 800px);
+            }
+
+            #main {
+                padding: 20px;
+            }
+
+            #main:after {
+                display: block;
+                content: ' ';
+                clear: both;
+            }
+
+            h1 {
+                margin: 20px;
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+                color: #D94854;
+            }
+
+            .chart {
+                width: 100%;
+                height: 90%;
+                float: left;
+            }
+        </style>
+        <div id='main'>
+            <div id="chart" style="width:100%;height:90%;"></div>
+        </div>
+        <script>
+
+            const value = 0.3421
+
+            var option = {
+            title: [
+                {
+                    text: '',
+                    top: '25%',
+                    left: '40%',
+                    textStyle: {
+                        fontSize: '25',
+                        fontWeight: '400',
+                        color: '#fff'
+                    }
+                },
+                {
+                    text: '',
+                    top: '31%',
+                    left: '40.8%',
+                    textStyle: {
+                        fontSize: '25',
+                        fontWeight: '400',
+                        color: '#fff'
+                    }
+                },
+                {
+                    text: '34.21%',
+                    top: '40%',
+                    left: '34%',
+                    textStyle: {
+                        fontSize: '50',
+                        fontWeight: '500',
+                        color: '#fff'
+                    }
+                }
+            ],
+            series: [
+                {
+                    name: '最外层-虚线',
+                    type: 'gauge',
+                    radius: '74%',
+                    startAngle: 0,
+                    endAngle: 360,
+                    axisLine: {
+                        show: false
+                    },
+                    axisTick: {
+                        distance: -6,
+                        length: 2,
+                        lineStyle: {
+                        color: '#2AECFF',
+                        width: 5,
+                        type: [20],
+                        dashOffset: 19,
+                        opacity: 0.8
+                        },
+                        splitNumber: 6
+                    },
+                    splitLine: {
+                        show: false
+                    },
+                    axisLabel: {
+                        show: false
+                    },
+                    pointer: {
+                        show: false
+                    }
+                },
+                {
+                    type: 'liquidFill',
+                    radius: '68%',
+                    z: 5,
+                    center: ['50%', '50%'],
+                    amplitude: 14,
+                    backgroundStyle: {
+                        color: '#0d2d42'
+                    },
+                    color: [
+                        {
+                        type: 'linear',
+                        x: 0,
+                        y: 0,
+                        x2: 0,
+                        y2: 1,
+                        colorStops: [
+                            {
+                                offset: 1,
+                                color: '#0061A2'
+                            },
+                            {
+                                offset: 0,
+                                color: '#00FFE5'
+                            }
+                        ],
+                        globalCoord: false
+                        },
+                        {
+                        type: 'linear',
+                        x: 0,
+                        y: 0,
+                        x2: 0,
+                        y2: 1,
+                        colorStops: [
+                            {
+                                offset: 1,
+                                color: '#0061A2'
+                            },
+                            {
+                                offset: 0,
+                                color: '#00FFE5'
+                            }
+                        ],
+                        globalCoord: false
+                        },
+                        {
+                        type: 'linear',
+                        x: 0,
+                        y: 0,
+                        x2: 0,
+                        y2: 1,
+                        colorStops: [
+                            {
+                                offset: 1,
+                                color: '#0061A2'
+                            },
+                            {
+                                offset: 0,
+                                color: '#00FFE5'
+                            }
+                        ],
+                        globalCoord: false
+                        }
+                    ],
+                    data: [
+                        value + 0.02,
+                        {
+                        value: value - 0.01,
+                        direction: 'left'
+                        },
+                        value - 0.01
+                    ],
+                    label: {
+                        normal: {
+                        formatter: ''
+                        }
+                    },
+                    outline: {
+                        show: true,
+                        borderDistance: 0,
+                        itemStyle: {
+                        borderWidth: 2,
+                        borderColor: '#2AECFF'
+                        }
+                    }
+                }
+            ]
+            };
+
+            var myChart = echarts.init(document.getElementById('chart'));
+            // 使用刚指定的配置项和数据显示图表。
+		    myChart.setOption(option);
+            
+        </script>
+    </body>
+</html>
